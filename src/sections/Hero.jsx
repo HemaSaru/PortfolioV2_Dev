@@ -1,7 +1,12 @@
 import React from "react";
-import typewriter from "typewriter-effect";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
+  const [textT] = useTypewriter({
+    words: ["Software Developer", "ASP.NET", "Full Stack Developer", "Laravel Developer"],
+    loop: {},
+  });
+
   return (
     <section className="w-full max-w-4xl mx-auto">
       <div className="mb-8 py-6">
@@ -13,21 +18,23 @@ const Hero = () => {
       <div className="space-y-4 mb-8">
         <h1 className="text-5xl md:text-5xl leading-tight font-medium text-white">
           I'm <span className="text-white">Hema Thapa,</span>
-          {/* <Typewriter options={{
-            strings: ["Software Engineer", "UI/UX Designer", "Full Stack Developer"],
-            autoStart: true,
-            loop: true,
-            delay: 50,
-            deleteSpeed: 50,
-          }} /> */}
+        </h1>
+
+        <h1 className="text-emerald-500 text-5xl md:text-5xl">
+          {textT}
+          <Cursor />
         </h1>
         <h2 className="text-5xl md:text-5xl font-semibold text-white">
-          Based in Vasant Kunj, New Delhi.
+          Based in New Delhi, India
         </h2>
       </div>
 
       <p className="text-md text-gray-300 leading-relaxed max-w-3xl mb-12">
-      I craft scalable, user-focused web applications that blend creativity with functionality. With 3 years of experience in full-cycle development using C#, .NET, React, PHP, and SQL, I’m passionate about building intuitive digital solutions that deliver seamless and engaging user experiences.
+        I craft scalable, user-focused web applications that blend creativity
+        with functionality. With 3 years of experience in full-cycle development
+        using C#, .NET, React, PHP, and SQL, I’m passionate about building
+        intuitive digital solutions that deliver seamless and engaging user
+        experiences.
       </p>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">

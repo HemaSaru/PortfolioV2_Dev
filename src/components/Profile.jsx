@@ -1,5 +1,6 @@
 import React from "react";
-import { Download, Send, Mail, Linkedin, Github } from "lucide-react";
+import { Download, Send, Mail, Linkedin } from "lucide-react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Profile = () => {
   return (
@@ -17,7 +18,7 @@ const Profile = () => {
       <div className="flex justify-center m-5">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1A1A] border border-gray-600 rounded-full">
           <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-          <span className="text-white text-sm">Software Engineer</span>
+          <span className="text-white text-sm">Software Developer</span>
         </div>
       </div>
 
@@ -35,27 +36,27 @@ const Profile = () => {
           />
         </div>
 
-        <div className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer">
-          <Linkedin
-            className="w-4 h-4 text-white"
-            href="https://www.linkedin.com/in/hema-thapa"
-          />
-        </div>
-        <div className="w-8 h-8 rounded-lg border border-gray-600 flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer">
-          <Github
-            className="w-4 h-4 text-white"
-            href="https://github.com/HemaSaru"
-          />
-        </div>
+        <a href="https://www.linkedin.com/in/hema-thapa" target="_blank">
+          {" "}
+          <div className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer">
+            <FaLinkedin className="w-4 h-4 text-white" />
+          </div>
+        </a>
+
+        <a href="https://github.com/HemaSaru" target="_blank">
+          <div className="w-8 h-8 rounded-lg border border-gray-600 flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer">
+            <FaGithub className="w-4 h-4 text-white" />
+          </div>
+        </a>
       </div>
 
       {/* Action Buttons */}
       <div className="flex gap-3">
-        <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-[#1A1A1A] border border-gray-600 rounded-lg text-white hover:border-gray-400 transition-colors">
+        <button className="flex-2 flex items-center justify-center gap-2 px-2 py-2 bg-[#1A1A1A] border border-gray-600 rounded-lg text-white hover:border-gray-400 transition-colors cursor-pointer">
           <Download className="w-4 h-4" />
           <span className="text-sm font-medium">Download CV</span>
         </button>
-        <button className="flex-1 flex items-center justify-center gap-2 px-4 py-1 bg-[#28E98C] rounded-lg text-black hover:bg-[#2EE88A] transition-colors">
+        <button className="flex-2 flex items-center justify-center gap-2 px-2 py-2 bg-[#28E98C] rounded-lg text-black hover:bg-[#2EE88A] transition-colors  cursor-pointer">
           <Send className="w-4 h-4" />
           <span className="text-sm font-medium">Contact Me</span>
         </button>
