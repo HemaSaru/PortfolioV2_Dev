@@ -23,14 +23,14 @@ const projects = [
       "Flexible software management solution designed for modern businesses and startups.",
   },
   {
-    title: "ShopzInn",
-    category: "E-commerce",
-    url: "#",
+    title: "Visual Arts Gallery",
+    category: "Design",
+    url: "https://artsgallerydesign.vercel.app/",
     // pages: "8 Pages",
     image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1719935115623-4857df23f3c6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
-      "Full-service digital agency website showcasing creative design and development capabilities.",
+      "Design-centric project showcasing a portfolio of visual arts and creative works.",
   },
   // {
   //   title: "CryptoraHub",
