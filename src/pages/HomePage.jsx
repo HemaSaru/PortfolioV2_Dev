@@ -10,20 +10,23 @@ import Contact from "../sections/Contact";
 const HomePage = () => {
   return (
     <div className="max-w-8xl mx-auto sm:px-6">
-      <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-        <div className=" md:w-2/5 p-8 md:p-5 lg:py-3 lg:px-10">
+      <div className="flex flex-col lg:flex-row gap-6">
+        {/* Sidebar Container */}
+        <div className="lg:w-[350px] lg:fixed lg:h-screen lg:left-0 lg:top-0 p-4 z-50">
           <Profile />
         </div>
-        <div className="w-full md:w-3/5 p-8 md:p-4 lg:p-9 text-left">
-          <Hero />
-          <Experience />
-          <Projects />
-          <Tools />
-          <Education />
-          <Contact />
+
+        {/* Main Content */}
+        <div className="w-full lg:ml-[350px] lg:w-[calc(100%-350px)] p-4 md:p-8 lg:p-12 text-left">
+          <div id="hero" className="scroll-mt-10"><Hero /></div>
+          <div id="experience" className="scroll-mt-10"><Experience /></div>
+          <div id="projects" className="scroll-mt-10"><Projects /></div>
+          <div id="tools" className="scroll-mt-10"><Tools /></div>
+          <div id="education" className="scroll-mt-10"><Education /></div>
+          <div id="contact" className="scroll-mt-10"><Contact /></div>
         </div>
       </div>
-      
+
     </div>
   );
 };
